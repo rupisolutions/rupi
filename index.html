@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Rupi Sol </title>
+        <title>Rupisol </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -72,14 +72,15 @@
 	                <div class="col-md-6">
 	                    <div class="block">
 	                        <h1 class="wow fadeInDown">RUPISOL UNA EMPRESA CON PASIÓN</h1>
+							
 	                        <div class="wow fadeInDown" data-wow-delay="0.3s">
                             <p class="wow fadeInDown" data-wow-delay="0.3s">
 							En Rupisol buscamos ser ese socio estratégico que se preocupa por tu crecimiento como empresario brindándote soluciones informáticas.
 							<br>Este 01/07/2019 estaremos iniciando el
-							<a target ="_blank" href ="https://www.rupitextil.com" style="color:white;font-size:18px;font-weight: bold;">
+							<a href ="#" style="color:white;font-size:18px;font-weight: bold;">
 							<u>Rupi Textil</u></a>, una aplicación informática enfocada a las necesidades del mundo textil.</br>
 							<br>¡Déjanos conocerte a través de esta encuesta y sé parte del cambio!</br> </p>
-	                        	<a class="btn btn-default btn-home" href="https://goo.gl/forms/rmMiyjmnQKU5buAk1" role="button">Ir a encuesta</a>
+	                        	<a target ="_blank" class="btn btn-default btn-home" href="https://goo.gl/forms/rmMiyjmnQKU5buAk1" role="button">Ir a encuesta</a>
 	                        </div>
 	                    </div>
 	                </div>
@@ -154,7 +155,7 @@
                                 </span>
                             </div>
                             <div class="caption">
-                                <h3>Soluciones reales a problemas reales</h3>
+                                <h3>Soluciones pensadas en ti</h3>
                                 <p>Combatimos juntos aquellos problemas que te quitan el sueño</p>
                             </div>
                         </div>
@@ -176,12 +177,12 @@
                         <div class="service">
                             <div class="icon-box">
                             	<span class="icon">
-                                    <i class="ion-ios-cloud-outline"></i>
+                                    <i class="ion-android-cloud-done"></i>
                                 </span>
                             </div>
                             <div class="caption">
-                                <h3>Nube</h3>
-                                <p>La solución estará alojada en la nube por lo que puedes acceder desde tu oficina, hogar o cualquier lugar con internet</p>
+                                <h3>Información protegida</h3>
+                                <p>No te preocupes, toda información sensible que confíes en nuestras aplicaciones no será compartida a terceros</p>
                             </div>
                         </div>
                     </div>
@@ -270,7 +271,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <p>Copyright &copy; <a href="http://www.rupisol.com">Rupi Sol</a>| Todos los derechos reservados.</p>
+                            <p>Copyright &copy; <a href="http://www.rupisol.com">Rupisol</a>| Todos los derechos reservados.</p>
                     </div>
                   </div>
                 </div>
@@ -302,7 +303,8 @@
 
 		  // Get todays date and time
 		  var now = new Date().getTime();
-
+		  // document.getElementById("pNow").innerHTML = formatDate(new Date());
+		
 		  // Find the distance between now and the count down date
 		  var distance = countDownDate - now;
 
@@ -329,6 +331,17 @@
 		function formatea(n){
 			return n > 9 ? "" + n: "0" + n;
 		}
+		function formatDate(date) {
+		  var hours = date.getHours();
+		  var minutes = date.getMinutes();
+		  var ampm = hours >= 12 ? 'pm' : 'am';
+		  hours = hours % 12;
+		  hours = hours ? hours : 12; // the hour '0' should be '12'
+		  minutes = minutes < 10 ? '0'+minutes : minutes;
+		  var strTime = hours + ':' + minutes + ' ' + ampm;
+		  return date.getMonth()+1 + "/" + date.getDate() + "/" + date.getFullYear() + "  " + strTime;
+		}
+
 		</script>
 
     </body>
