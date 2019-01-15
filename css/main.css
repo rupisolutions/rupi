@@ -874,3 +874,8 @@ footer p a:hover {
 .ion-icon {
         font-size: 30px; 
     }
+
+/* justificación de parrafos */
+.pjustifica  {
+	text-align:justify;
+}
