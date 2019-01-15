@@ -869,3 +869,8 @@ footer p a {
 footer p a:hover {
   color: #fff;
 }
+
+/* Agregado para manejar el tamaño de los icons */
+.ion-icon {
+        font-size: 30px; 
+    }
