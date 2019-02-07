@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Rupisol </title>
+        <title>Rupisol</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="shortcut icon" type="image/png" href="images/RUPI_FAVICON.png"/>
+        <link rel="shortcut icon" type="image/png" href="images/rufavicon.png"/>
         <!-- Fonts -->
         <!-- Lato -->
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
@@ -28,30 +28,108 @@
 
     <body id="body">
 
-    
+    	<div id="preloader">
+    		<div class="book">
+    		  <div class="book__page"></div>
+    		  <div class="book__page"></div>
+    		  <div class="book__page"></div>
+    		</div>
+    	</div>
+
+	    <!--
+	    Header start
+	    ==================== -->
+	    <div class="navbar-default navbar-fixed-top" id="navigation">
+	        <div class="container">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="http://rupisol.com">
+                        <img class="logo-1" src="images/logo.png" alt="LOGO">
+	                    <img class="logo-2" src="images/logo-2.png" alt="LOGO">
+	                </a>
+	            </div>
+
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <nav class="collapse navbar-collapse" id="navbar">
+	                <ul class="nav navbar-nav navbar-right" id="top-nav">
+	                    <li class="current"><a href="#body">Inicio</a></li>
+	                    <li><a href="#information">Nosotros</a></li>
+						<!--<li><a href="#meet">Conócenos</a></li>-->
+						<li><a href="#service">Nuestros Servicios</a></li>
+	                    <li><a href="#contact">Contacto</a></li>
+	                </ul>
+	            </nav><!-- /.navbar-collapse -->
+	        </div><!-- /.container-fluid -->
+	    </div>
+
 	    <section id="hero-area">
 	        <div class="container">
-	           <br> </br> 
-			    <br> </br> 
-				 <br> </br> 
-				  <br> </br> 
-				   <br> </br> 
-				    <br> </br> 
-					 <br> </br> 
-					  <br> </br> 
-					   <br> </br> 
-					    <br> </br> 
-						 <br> </br> 
-						  <br> </br> 
-						   <br> </br> 
-						    <br> </br> 
-							 <br> </br> 
-							  <br> </br> 
-							   <br> </br> 
-							    <br> </br> 
-								 <br> </br> 
-								  <br> </br> 
-								  
+	            <div class="row">
+	                <div class="col-md-6">
+	                    <div class="block">
+	                        <h1 class="wow fadeInDown">RUPISOL UNA EMPRESA CON PASIÓN</h1>
+							
+	                        <div class="wow fadeInDown" data-wow-delay="0.3s">
+                            <p class="pjustifica wow fadeInDown" data-wow-delay="0.3s">
+							En Rupisol buscamos ser ese socio estratégico que se preocupa por tu crecimiento como empresario brindándote soluciones informáticas.<br>
+							<br>Hasta este 30/04/2019 estaremos recopilando información para lanzar la versión inicial de
+							<a href ="#" style="color:white;font-size:18px;font-weight: bold;">
+							<u>Rupi Textil</u></a>, una aplicación informática enfocada a las necesidades del mundo textil.</br>
+							<br>¡Déjanos conocerte a través de esta encuesta y sé parte del cambio!</br> </p>
+	                        	<a target ="_blank" class="btn btn-default btn-home" href="https://goo.gl/forms/rmMiyjmnQKU5buAk1" role="button">Ir a encuesta</a>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-6 wow zoomIn">
+	                    <div class="block">
+	                        <div class="counter text-center">
+							 <h3 style="color:white;" >TIEMPO RESTANTE DE ETAPA</h3>
+								<h2>ANALISIS</h2>
+	                            <ul id="countdown_dashboard">
+	                                <li>
+	                                    <div class="dash days_dash">
+	                                        <!--<div class="digit">0</div>
+	                                        <div class="digit">0</div>
+	                                        <div class="digit">0</div>-->
+											<div class="digit" id="dayTimer">0</div>
+	                                        <span class="dash_title">Días</span>
+	                                    </div>
+	                                </li>
+	                                <li>
+	                                    <div class="dash hours_dash">
+	                                        <!--<div class="digit">0</div>
+	                                        <div class="digit">0</div>-->
+											<div class="digit" id="hoursTimer">0</div>
+	                                        <span class="dash_title">Horas</span>
+	                                    </div>
+	                                </li>
+	                                <li>
+	                                    <div class="dash minutes_dash">
+	                                        <!--<div class="digit">0</div>
+	                                        <div class="digit">0</div>-->
+											<div class="digit" id="minutesTimer">0</div>
+	                                        <span class="dash_title">Minutos</span>
+	                                    </div>
+	                                </li>
+	                                <li>
+	                                    <div class="dash seconds_dash">
+	                                        <!--<div class="digit">0</div>
+	                                        <div class="digit">0</div>-->
+											<div class="digit" id="secondsTimer">0</div>
+	                                        <span class="dash_title">Segundos</span>
+	                                    </div>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div><!-- .row close -->
 	        </div><!-- .container close -->
 	    </section><!-- header close -->
 
@@ -60,13 +138,13 @@
       <!--
         Service start
         ==================== -->
-        <section id="service" class="section">
+        <section id="information" class="section" style="background: #f9f9f9;">
             <div class="container">
                 <div class="row">
                     <div class="heading wow fadeInUp">
                         <h2>Nosotros</h2>
-                        <p> Nuestra principal motivación es ayudarte con tus problemas y dificultades que no dejan crecer tu negocio. 
-						En esta etapa nos encontramos entrevistando constantemente a emprendedo	res como tú para conocer esos problemas que tantos dolores de cabeza te dan.
+                        <p align="left"> Nuestra principal motivación es ayudarte con tus problemas y dificultades que no dejan crecer tu negocio. 
+						En esta etapa nos encontramos entrevistando constantemente a emprendedores como tú para conocer esos problemas que tantos dolores de cabeza te dan.
                         <br></br>
 						Comprometidos en brindarte
 						</p>
@@ -126,6 +204,150 @@
                 </div>
             </div><!-- .container close -->
         </section><!-- #service close -->
+		
+		<!--
+        Service start
+        ==================== -->
+        <section id="meet" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="heading wow fadeInUp">
+                        <h2>¿Qué es Rupisol?</h2>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+							<div class="block">
+								<div class="heading wow fadeInUp">
+									<p align="left">Rupisol es una startup peruana, compuesta por Ingenieros de Software y Contadores, que nace con la misión de ayudar a las empresas de distintos rubros a través de soluciones tecnológicas a problemas reales. Nuestro principal diferenciador es que siempre estamos ahí para escucharte lo cual se ve reflejado en el servicio de alta calidad al que estamos comprometidos. Buscamos construir software como servicio (SaaS) para distintos rubros. Actualmente nuestros esfuerzos están enfocados al Rubro Textil.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6">
+								<img src="images/whatisrupi.jpeg" alt="Smiley face" height="70%" width="70%">
+						</div>
+                    </div>
+                </div>
+            </div><!-- .container close -->
+        </section><!-- #service close -->
+		
+		<!--
+        Service start
+        ==================== -->
+        <section id="meet" class="section" style="background: #f9f9f9;">
+            <div class="container">
+				<div class="row">
+                    <div class="heading wow fadeInUp">
+                        <h2 align="left">Misión</h2>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+							<div class="block">
+								<div class="heading wow fadeInUp">
+									<p align="left">Brindar innovación a las pequeñas y medianas empresas a través de Software como Servicio que solucionan problemas reales.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6">
+								<img src="images/misionRupiv0.png" alt="Smiley face" height="70%" width="70%">
+						</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="heading wow fadeInUp">
+                        <h2 align="left">Visión</h2>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+							<div class="block">
+								<div class="heading wow fadeInUp">
+									<p align="left">Ser la empresa pionera de Perú en creación de Software como Servicio para distintas verticales de negocio y el socio estratégico de las pequeñas y medianas empresas permitiendo el desarrollo nacional en el ámbito de la Ingeniería de Software, Ingeniería de Procesos y Contabilidad.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6">
+								<img src="images/visionRupiv0.png" alt="Smiley face" height="70%" width="70%">
+						</div>
+                    </div>
+                </div>
+            </div><!-- .container close -->
+        </section><!-- #service close -->
+		
+		
+		<!--
+        Service start
+        ==================== -->
+        <section id="meet2" class="section" >
+            <div class="container">
+                <div class="row">
+                    <div class="heading wow fadeInUp">
+                        <h2>¿Por qué elegir a Rupisol?</h2>
+                        <p align="left">El equipo de Rupisol cuenta con amplia experiencia en actividades como:
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<div class="block">
+								<div class="heading wow fadeInUp">
+									<ul>
+										<li type=circle align="left">Desarrollo de Software</li>
+										<li type=circle align="left">Implementación y Consultoría de Proyectos de Tecnología para Banca y Finanzas (ERP, EPM, BI)</li>
+										<li type=circle align="left">Auditoría Contable</li>
+										<li type=circle align="left">Proyectos de integración de sistemas legacy con soluciones integrales</li>
+										<li type=circle align="left">Experiencia en proyectos de Perú, Ecuador, Chile y México.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6">
+								<img src="images/imagSW.png" alt="Smiley face" height="30%" width="40%">
+						</div>
+						
+                    </div>
+                </div>
+            </div><!-- .container close -->
+        </section><!-- #service close -->
+		
+		<!--
+        Service start
+        ==================== -->
+        <section id="service" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="heading wow fadeInUp">
+                        <h2>Nuestros Servicios</h2>
+                        <p></p>
+                    </div>
+                    <div class="col-sm-8 col-md-4 wow fadeInLeft">
+                        <div class="service">
+                            <div class="icon-box" title="Este es el texto que aparecerá">
+                            	<span class="icon">
+                                    <i class="ion-android-desktop"></i>								
+                                </span>
+                            </div>
+                            <div class="caption">
+                                <h3>Desarrollo de Software</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="service">
+                            <div class="icon-box" title="Este es el texto que aparecerá">
+                            	<span class="icon">
+                                    <i class="ion-briefcase"></i>
+                                </span>
+                            </div>
+                            <div class="caption">
+                            	<h3>Consultoría de Sistemas / Proyectos T.I</h3>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="col-sm-8 col-md-4 wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="service">
+                            <div class="icon-box" title="Este es el texto que aparecerá">
+                            	<span class="icon">
+                                    <i class="ion-ios-world"></i>
+                                </span>
+                            </div>
+                            <div class="caption">
+                                <h3>Diseño de páginas web</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .container close -->
+        </section><!-- #service close -->
 
        <!--
         Contact start
@@ -148,19 +370,18 @@
 							</div>
 							<address class="address">
                                 <hr>
-								 
-								
-                                <p><strong><i class="ion-paper-airplane"></i> Correo:</strong>&nbsp;rupisolutions@gmail.com<br>
-                                <strong> <i class="ion-social-whatsapp-outline"></i> Teléfono:</strong>&nbsp;+51 947 015 856</p>
-
-
+                                <p><strong><i class="ion-icon  ion-paper-airplane"></i> contacto@rupisol.com <br>
+                                <strong> <i class="ion-icon  ion-social-whatsapp-outline"></i> +51 947 015 856<br>
+		<a target ="_blank" href="https://www.facebook.com/Rupisolutions"> <i class="ion-icon ion-social-facebook-outline"></i> Rupisol </a> <br>						
+								<!-- <i class="ion-icon ion-social-twitter-outline"></i> @rupisol -->
+								</p>
 							</address>
-						</div>
+							</div>
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
                     	<div class="form-group">
-                    	    <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfuCOhPNaRqYW0BX5tFgElszte6zO02T54BKbwEdBv9f2XnHA/formResponse" method="post" id="contact-form-g">
+                    	    <form target="_blank"  action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfuCOhPNaRqYW0BX5tFgElszte6zO02T54BKbwEdBv9f2XnHA/formResponse" method="post" id="contact-form-g">
                     	        <div class="input-field">
                     	            <input type="text" class="form-control" placeholder="Tu nombre" name="entry.1473514126" required>
                     	        </div>
@@ -177,7 +398,7 @@
                     	        <p>Tu mensaje fue enviado correctamente</p>
                     	    </div>
                     	    <div id="error">
-                    	        <p>Lo sentimos, no pudimos enviar tu mensaje, envía un correo a suporte@rupisol.com</p>
+                    	        <p>Lo sentimos, no pudimos enviar tu mensaje, envía un correo a contacto@rupisol.com</p>
                     	    </div>
                     	</div>
                     </div>
@@ -195,7 +416,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <p>Copyright &copy; <a href="http://www.rupisol.com">Rupisol</a>| Todos los derechos reservados.</p>
+                            <p>Copyright &copy; <a href="https://rupisol.com">Rupisol</a>| Todos los derechos reservados.</p>
                     </div>
                   </div>
                 </div>
@@ -218,9 +439,18 @@
         <script src="js/wow.min.js"></script>
         <script src="js/main.js"></script>
 		<script>
+		var dominiopage = document.domain;
+		console.log("Dominio: "+dominiopage);
+		/*if(dominiopage=='rupitextil'){
+			window.location.href = "rupitextil.html";
+		}*/
+		var URLactual = window.location;
+		console.log("URLactual: "+URLactual);
+		//alert(URLactual);
+
 		// Set the date we're counting down to
 		//var countDownDate = new Date("Jul 1, 2019 00:00:00").getTime();
-		var countDownDate = new Date("2019-07-1").getTime();
+		var countDownDate = new Date("2019-04-30").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
